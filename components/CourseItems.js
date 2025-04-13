@@ -12,7 +12,9 @@ const CourseItems = () => {
                 flex: 0.8,
             }}
         >
-            <ScrollView>
+            <ScrollView
+                indicatorStyle='black'
+            >
                 <Text
                 style={{
                     fontSize: 30,

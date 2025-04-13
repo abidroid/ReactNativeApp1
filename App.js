@@ -7,11 +7,11 @@ import CourseItems from './components/CourseItems';
 export default function App() {
   return (
     <View
-      style={{ backgroundColor: 'white', flex: 1, }}
+      style={{ backgroundColor: 'black', flex: 1, }}
     >
 
       <HeaderComponent />
-      <CourseItems />
+      <Welcome />
       <FooterComponent />
 
 
