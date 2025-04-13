@@ -3,15 +3,15 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import FooterComponent from './components/FooterComponent';
 import HeaderComponent from './components/HeaderComponent';
 import Welcome from './components/Welcome';
-
+import CourseItems from './components/CourseItems';
 export default function App() {
   return (
     <View
-      style={{ backgroundColor: 'blue', flex: 1, }}
+      style={{ backgroundColor: 'white', flex: 1, }}
     >
 
       <HeaderComponent />
-      <Welcome />
+      <CourseItems />
       <FooterComponent />
 
 

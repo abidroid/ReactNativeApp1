@@ -5,7 +5,7 @@ function FooterComponent() {
     return (
 
         <View style={{
-            // flex: 0.05,
+             flex: 0.05,
             backgroundColor: 'yellow',
             padding: 8
         }}>
