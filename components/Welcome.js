@@ -6,7 +6,7 @@ function Welcome() {
 
         <View
             style={{
-                flex: 0.8,
+                flex: 0.92,
                
 
             }}

@@ -1,11 +1,19 @@
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
 function FooterComponent() {
 
     return (
 
-        <View style={{backgroundColor: 'yellow', padding: 8}}>
-            <Text>All rights reserved by IntelliLogics 2025</Text>
+        <View style={{
+            // flex: 0.05,
+            backgroundColor: 'yellow',
+            padding: 8
+        }}>
+            <Text
+            style={{
+                textAlign: 'center'
+            }}
+            >All rights reserved by IntelliLogics 2025</Text>
         </View>
     );
 }
