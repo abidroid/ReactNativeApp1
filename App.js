@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import FooterComponent from './components/FooterComponent';
 import HeaderComponent from './components/HeaderComponent';
+import Welcome from './components/Welcome';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
     >
 
       <HeaderComponent />
+      <Welcome />
 
 
     </View>
