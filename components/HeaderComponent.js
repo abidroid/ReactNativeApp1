@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 function HeaderComponent() {
 
     return (
-        <View style={{ flex: 0.1, backgroundColor: 'yellow' }}>
+        <View style={{ flex: 0.15, backgroundColor: 'yellow' }}>
             <Text
                 numberOfLines={3}
 

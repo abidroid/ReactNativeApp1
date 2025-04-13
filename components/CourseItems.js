@@ -3,7 +3,7 @@ import { View, Text, ScrollView } from 'react-native';
 const CourseItems = () => {
 
     const courses = [
-        'C++ \n Java \n Python \n Kotlin \n Swift \n Native Android \n Native iOS \n HTML \n CSS \n Javascript \n ReactJS \n NodeJS \n ExpressJS \n MongoDB \n Flutter \n React Native'
+        ' C++ \n Java \n Python \n Kotlin \n Swift \n Native Android \n Native iOS \n HTML \n CSS \n Javascript \n ReactJS \n NodeJS \n ExpressJS \n MongoDB \n Flutter \n React Native'
     ];
 
     return (
