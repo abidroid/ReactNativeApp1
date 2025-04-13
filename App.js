@@ -1,14 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import FooterComponent from './components/FooterComponent';
+import HeaderComponent from './components/HeaderComponent';
 
 export default function App() {
   return (
+
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <FooterComponent />
+      <SafeAreaView>
+        <HeaderComponent />
+
+        <View
+          style={{ backgroundColor: 'blue', flex: 1, width: 100, }}
+        ></View>
+        <StatusBar style="auto" />
+        <FooterComponent />
+      </SafeAreaView>
     </View>
+
   );
 }
 
