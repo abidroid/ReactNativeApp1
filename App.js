@@ -5,20 +5,13 @@ import HeaderComponent from './components/HeaderComponent';
 
 export default function App() {
   return (
+    <View
+      style={{ backgroundColor: 'blue', flex: 1, }}
+    >
 
-    <View style={styles.container}>
-      <SafeAreaView>
+      <HeaderComponent />
 
 
-        <View
-          style={{ backgroundColor: 'blue', flex: 1, }}
-        >
-
-          <HeaderComponent />
-
-        </View>
-        <FooterComponent />
-      </SafeAreaView>
     </View>
 
   );

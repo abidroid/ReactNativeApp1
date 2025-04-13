@@ -1,12 +1,27 @@
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
 function HeaderComponent() {
 
     return (
-        <View>
+        <View style={{ flex: 0.1, backgroundColor: 'yellow' }}>
             <Text
-                style={{fontSize: 30, backgroundColor: 'yellow'}}
-            >Welcome to IntelliLogics</Text>
+                numberOfLines={3}
+
+                style={{
+                    fontSize: 30,
+                    color: 'black',
+                    paddingTop: 60,
+                    textAlign: 'center', 
+                    fontWeight: 'bold',
+                    // flexWrap: 'wrap',
+                    // flexShrink: 1,
+
+                }}
+            >IntelliLogics
+
+                {/* <Text style={{ fontWeight: 'bold' }}> IntelliLogics — the place where we turn long ideas into amazing mobile experiences, line after line after line! */}
+                {/* </Text> */}
+            </Text>
         </View>
     );
 };
