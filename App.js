@@ -8,12 +8,15 @@ export default function App() {
 
     <View style={styles.container}>
       <SafeAreaView>
-        <HeaderComponent />
+
 
         <View
-          style={{ backgroundColor: 'blue', flex: 1, width: 100, }}
-        ></View>
-        <StatusBar style="auto" />
+          style={{ backgroundColor: 'blue', flex: 1, }}
+        >
+
+          <HeaderComponent />
+
+        </View>
         <FooterComponent />
       </SafeAreaView>
     </View>
