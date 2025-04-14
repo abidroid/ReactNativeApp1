@@ -43,6 +43,7 @@ const FlatListComponent = () => {
             <FlatList
                 data={menuItemsToDisplay}
                 renderItem={renderItem}
+                keyExtractor={(item) => item.id}
 
             />
         </View>
