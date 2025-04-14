@@ -4,14 +4,16 @@ import FooterComponent from './components/FooterComponent';
 import HeaderComponent from './components/HeaderComponent';
 import Welcome from './components/Welcome';
 import CourseItems from './components/CourseItems';
+import FlatListComponent from './components/FlatListComponent';
 export default function App() {
   return (
     <View
-      style={{ backgroundColor: 'black', flex: 1, }}
+      style={{ backgroundColor: 'white', flex: 1, }}
     >
 
       <HeaderComponent />
-      <Welcome />
+      {/* <Welcome /> */}
+      <FlatListComponent />
       <FooterComponent />
 
 

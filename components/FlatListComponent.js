@@ -28,7 +28,7 @@ const menuItemsToDisplay = [
 
 const Item = ({name}) => (
     <View>
-        <Text>{name}</Text>
+        <Text style={styles.listItem}>{name}</Text>
     </View>
 );
 
@@ -38,7 +38,7 @@ const FlatListComponent = () => {
 
     return (
 
-        <View>
+        <View style={styles.container}>
             <FlatList 
             data={menuItemsToDisplay}
             renderItem={renderItem}
@@ -49,3 +49,16 @@ const FlatListComponent = () => {
 };
 
 export default FlatListComponent;
+
+const styles = StyleSheet.create({
+
+    container: {
+        flex: 0.8,
+
+    },
+
+    listItem: {
+        fontSize: 20,
+        padding: 20
+    }
+});
