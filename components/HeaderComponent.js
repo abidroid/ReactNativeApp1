@@ -21,7 +21,7 @@ export default HeaderComponent;
 
 const headerStyle = StyleSheet.create({
 
-    outerContainer: { flex: 0.2, backgroundColor: 'yellow' },
+    outerContainer: { flex: 0.15, backgroundColor: 'yellow' },
     innerTextStyle: {
         fontSize: 30,
         color: 'black',

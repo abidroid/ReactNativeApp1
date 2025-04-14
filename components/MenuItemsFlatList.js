@@ -60,6 +60,7 @@ const menuItemStyles = StyleSheet.create({
 
     outerContainer: {
         flex: 0.8,
+        backgroundColor: 'black'
     },
 
     menuItemRow: {
@@ -68,12 +69,13 @@ const menuItemStyles = StyleSheet.create({
         padding: 10,
         marginHorizontal: 10,
         marginVertical: 5,
-        backgroundColor: '#aeaeae',
+        // backgroundColor: '#aeaeae',
         borderRadius: 10
     },
 
     menuItemText: {
         fontSize: 20,
+        color: '#F4CE14',
 
     }
 });
