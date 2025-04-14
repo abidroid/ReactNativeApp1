@@ -23,26 +23,27 @@ const menuItemsToDisplay = [
     { name: 'Tartufo', id: '20U' },
     { name: 'Tiramisu', id: '21V' },
     { name: 'Panna Cotta', id: '22W' },
-  ];
+];
 
 
-const Item = ({name}) => (
-    <View>
-        <Text style={styles.listItem}>{name}</Text>
+const Item = ({ item }) => (
+    <View style={styles.listRow}>
+        <Text style={styles.listItem}>{item.id}</Text>
+        <Text style={styles.listItem}>{item.name}</Text>
     </View>
 );
 
 const FlatListComponent = () => {
 
-    const renderItem = ({item}) => <Item name={item.name} />;
+    const renderItem = ({ item }) => <Item item={item} />;
 
     return (
 
         <View style={styles.container}>
-            <FlatList 
-            data={menuItemsToDisplay}
-            renderItem={renderItem}
-            
+            <FlatList
+                data={menuItemsToDisplay}
+                renderItem={renderItem}
+
             />
         </View>
     );
@@ -57,6 +58,12 @@ const styles = StyleSheet.create({
 
     },
 
+    listRow: {
+        flexDirection: 'row',
+        backgroundColor: '#aeaeae',
+        margin: 10,
+        borderRadius: 10
+    },
     listItem: {
         fontSize: 20,
         padding: 20
