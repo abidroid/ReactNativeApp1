@@ -25,8 +25,27 @@ const menuItemsToDisplay = [
     { name: 'Panna Cotta', id: '22W' },
   ];
 
+
+const Item = ({name}) => (
+    <View>
+        <Text>{name}</Text>
+    </View>
+);
+
 const FlatListComponent = () => {
 
+    const renderItem = ({item}) => <Item name={item.name} />;
+
+    return (
+
+        <View>
+            <FlatList 
+            data={menuItemsToDisplay}
+            renderItem={renderItem}
+            
+            />
+        </View>
+    );
 };
 
 export default FlatListComponent;
