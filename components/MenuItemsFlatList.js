@@ -1,4 +1,4 @@
-import {View, Text, FlatList, StyleSheet } from 'react-native';
+import { View, Text, FlatList, StyleSheet } from 'react-native';
 
 const menuItemsToDisplay = [
     { name: 'Hummus', price: '$5.00', id: '1A' },
@@ -22,36 +22,58 @@ const menuItemsToDisplay = [
     { name: 'Tartufo', price: '$3.00', id: '19T' },
     { name: 'Tiramisu', price: '$5.00', id: '20U' },
     { name: 'Panna Cotta', price: '$5.00', id: '21V' },
-  ];
+];
 
 
-  const Item = ({item}) => {
+const Item = ({ item }) => {
 
     return (
 
-        <View>
-            <Text>{item.name}</Text>
-            <Text>{item.price}</Text>
+        <View style={menuItemStyles.menuItemRow}>
+            <Text style={menuItemStyles.menuItemText}>{item.name}</Text>
+            <Text style={menuItemStyles.menuItemText}>{item.price}</Text>
 
         </View>
     );
-  }
+}
 
 const MenuItemsFlatList = () => {
 
-    const renderItem = () => <Item item={item} />
+    const renderItem = ({ item }) => <Item item={item} />
 
-    return(
+    return (
 
-        <View>
-            <FlatList 
-            data={menuItemsToDisplay}
-            renderItem={renderItem}
-            keyExtractor={(item) => item.id}
-            
+        <View style={menuItemStyles.outerContainer}>
+            <FlatList
+                data={menuItemsToDisplay}
+                renderItem={renderItem}
+                keyExtractor={(item) => item.id}
+
             />
         </View>
     );
 }
 
 export default MenuItemsFlatList;
+
+const menuItemStyles = StyleSheet.create({
+
+    outerContainer: {
+        flex: 0.8,
+    },
+
+    menuItemRow: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: 10,
+        marginHorizontal: 10,
+        marginVertical: 5,
+        backgroundColor: '#aeaeae',
+        borderRadius: 10
+    },
+
+    menuItemText: {
+        fontSize: 20,
+
+    }
+});
