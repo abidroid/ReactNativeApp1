@@ -76,7 +76,7 @@ const menuItemStyles = StyleSheet.create({
     },
 
     headerText: {
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: 'bold',
         color: '#F4CE14',
 
