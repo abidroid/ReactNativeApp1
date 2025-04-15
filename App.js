@@ -7,6 +7,7 @@ import CourseItems from './components/CourseItems';
 import FlatListComponent from './components/FlatListComponent';
 import MenuItemsFlatList from './components/MenuItemsFlatList';
 import SectionListComponent from './components/SectionListComponent';
+import SectionListWithComplexData from './components/SectionListWithComplexData';
 export default function App() {
   return (
     <View
@@ -16,7 +17,8 @@ export default function App() {
       <HeaderComponent />
       {/* <FlatListComponent /> */}
       {/* <MenuItemsFlatList /> */}
-      <SectionListComponent />
+      {/* <SectionListComponent /> */}
+      <SectionListWithComplexData />
       <FooterComponent />
 
 
