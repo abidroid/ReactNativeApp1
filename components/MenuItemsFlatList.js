@@ -24,6 +24,15 @@ const menuItemsToDisplay = [
     { name: 'Panna Cotta', price: '$5.00', id: '21V' },
 ];
 
+const Separator = () => <View style={menuItemStyles.separator} />;
+
+const Header = () => <Text style={menuItemStyles.headerText}>Items List</Text>;
+
+const Footer = () => (
+    <Text style={menuItemStyles.headerText}>
+        All rights reserved to Little Lemon
+    </Text>
+);
 
 const Item = ({ item }) => {
 
@@ -48,6 +57,9 @@ const MenuItemsFlatList = () => {
                 data={menuItemsToDisplay}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id}
+                ItemSeparatorComponent={Separator}
+                ListHeaderComponent={Header}
+                ListFooterComponent={Footer}
 
             />
         </View>
@@ -63,6 +75,12 @@ const menuItemStyles = StyleSheet.create({
         backgroundColor: 'black'
     },
 
+    headerText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#F4CE14',
+
+    },
     menuItemRow: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -77,5 +95,10 @@ const menuItemStyles = StyleSheet.create({
         fontSize: 20,
         color: '#F4CE14',
 
+    },
+
+    separator: {
+        borderBottomWidth: 1,
+        borderColor: '#F4CE14'
     }
 });
