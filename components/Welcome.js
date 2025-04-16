@@ -24,6 +24,7 @@ function Welcome() {
                 </Text>
 
                 <TextInput
+                    keyboardType=''
                     style={welcomeStyles.input}
                     placeholder='First Name'
                     onChangeText={onChangeFirstName}
@@ -44,6 +45,12 @@ const welcomeStyles = StyleSheet.create({
     input: {
         backgroundColor: 'white',
         padding: 12,
+        marginTop: 12,
+        borderColor: 'red',
+        borderWidth: 2,
+        height: 40,
+        borderRadius: 12,
+        
         
 
     },
