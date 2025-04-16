@@ -1,8 +1,10 @@
-import { View, Text, ScrollView } from 'react-native';
+import React from 'react';
+import { View, Text, ScrollView, TextInput } from 'react-native';
 import { StyleSheet } from 'react-native';
 
 function Welcome() {
 
+    const [firstName, onChangeFirstName] = React.useState('Useless');
     return (
 
         <View
@@ -18,13 +20,15 @@ function Welcome() {
                     style={welcomeStyles.detailItemText}
                 >
                     IntelliLogics is a free study site where you can learn Mobile and Web Development.
-                    IntelliLogics is a free study site where you can learn Mobile and Web Development.
-                    IntelliLogics is a free study site where you can learn Mobile and Web Development.
-                    IntelliLogics is a free study site where you can learn Mobile and Web Development.
-                    IntelliLogics is a free study site where you can learn Mobile and Web Development.
-                    IntelliLogics is a free study site where you can learn Mobile and Web Development.
 
                 </Text>
+
+                <TextInput
+                    style={welcomeStyles.input}
+                    placeholder='First Name'
+                    onChangeText={onChangeFirstName}
+                    value={firstName}
+                />
             </ScrollView>
         </View>
     );
@@ -37,6 +41,12 @@ const welcomeStyles = StyleSheet.create({
         flex: 0.92
     },
 
+    input: {
+        backgroundColor: 'white',
+        padding: 12,
+        
+
+    },
     headerText: {
         color: 'white',
         textAlign: 'center',
