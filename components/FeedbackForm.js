@@ -22,7 +22,7 @@ const FeedbackForm = () => {
         >
 
             <ScrollView
-            style={formStyles.innerContainer}
+                style={formStyles.innerContainer}
                 keyboardDismissMode="on-drag"
             >
 
@@ -30,27 +30,32 @@ const FeedbackForm = () => {
                 <Text style={formStyles.questionText}>How is your Online Flutter Class?</Text>
 
                 <TextInput
-                style={formStyles.inputBox}
+                    style={formStyles.inputBox}
                     placeholder="First Name"
                     value={firstName}
+                    onChangeText={onChangeFirstName}
                 />
                 <TextInput
-                                style={formStyles.inputBox}
+                    style={formStyles.inputBox}
 
                     placeholder="Last Name"
                     value={lastName}
+                    onChangeText={onChangeLastName}
+
                 />
                 <TextInput
-                style={formStyles.messageBox}
+                    style={formStyles.messageBox}
                     placeholder="Message"
                     value={message}
                     multiline
                     editable
                     numberOfLines={5}
+                    onChangeText={onChangeMessage}
+
                 />
-                <Button 
-                title="Submit"
-                onP
+                <Button
+                    title="Submit"
+                    onP
                 />
             </ScrollView>
         </KeyboardAvoidingView>
@@ -80,14 +85,14 @@ const formStyles = StyleSheet.create({
         // borderColor: '',
         borderWidth: 1,
         height: 40,
-        padding:   12,
+        padding: 12,
         marginBottom: 16,
     },
 
     messageBox: {
         // borderColor: '#ccc',
         borderWidth: 1,
-        padding:   12,
+        padding: 12,
         marginBottom: 16,
         height: 120,
     },
