@@ -8,6 +8,7 @@ import FlatListComponent from './components/FlatListComponent';
 import MenuItemsFlatList from './components/MenuItemsFlatList';
 import SectionListComponent from './components/SectionListComponent';
 import SectionListWithComplexData from './components/SectionListWithComplexData';
+import FeedbackForm from './components/FeedbackForm';
 export default function App() {
   return (
     <View
@@ -15,11 +16,12 @@ export default function App() {
     >
 
       <HeaderComponent />
-      <Welcome />
+      {/* <Welcome /> */}
       {/* <FlatListComponent /> */}
       {/* <MenuItemsFlatList /> */}
       {/* <SectionListComponent /> */}
       {/* <SectionListWithComplexData /> */}
+      <FeedbackForm />
       <FooterComponent />
 
 
@@ -31,7 +33,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#fff',
     // alignItems: 'center',
     // justifyContent: 'center',
   },
