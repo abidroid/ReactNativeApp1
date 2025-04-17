@@ -10,21 +10,23 @@ import SectionListComponent from './components/SectionListComponent';
 import SectionListWithComplexData from './components/SectionListWithComplexData';
 import FeedbackForm from './components/FeedbackForm';
 import LoginPage from './pages/LoginPage';
+import ImageBackgroundPage from './pages/ImageBackgroundPage';
 export default function App() {
   return (
     <View
       style={styles.container}
     >
 
-      <HeaderComponent />
-      <Welcome />
+      {/* <HeaderComponent /> */}
+      <ImageBackgroundPage />
+      {/* <Welcome /> */}
       {/* <FlatListComponent /> */}
       {/* <MenuItemsFlatList /> */}
       {/* <SectionListComponent /> */}
       {/* <SectionListWithComplexData /> */}
       {/* <FeedbackForm /> */}
       {/* <LoginPage /> */}
-      <FooterComponent />
+      {/* <FooterComponent /> */}
 
 
     </View>
