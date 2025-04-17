@@ -27,6 +27,8 @@ function Welcome() {
                 <Image
                 style={welcomeStyles.logo}
                     source={require('../img/intellilogics_logo.jpeg')}
+                    accessable={true}
+                    accessibilityLabel={'IntelliLogics Logo'}
                    
                 />
                 <View style={{ height: 20 }}></View>
