@@ -16,12 +16,18 @@ function Welcome() {
                     style={welcomeStyles.headerText}
                 >Welcome to IntelliLogics</Text>
 
-                <Image 
-                    source={{uri: 'https://avatars.githubusercontent.com/u/17814795?v=4'}}
+                <Image
+                    source={{ uri: 'https://avatars.githubusercontent.com/u/17814795?v=4' }}
                     width={200}
                     height={200}
                     borderRadius={10}
                     resizeMode='contain'
+                />
+
+                <Image
+                style={welcomeStyles.logo}
+                    source={require('../img/intellilogics_logo.jpeg')}
+                   
                 />
                 <View style={{ height: 20 }}></View>
                 <Text
@@ -58,8 +64,8 @@ const welcomeStyles = StyleSheet.create({
         borderWidth: 2,
         height: 40,
         borderRadius: 12,
-        
-        
+
+
 
     },
     headerText: {
@@ -74,6 +80,12 @@ const welcomeStyles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 30,
         padding: 20,
+    },
+
+    logo: {
+        width: 100,
+        height: 100,
+        resizeMode: 'cover'
     }
 }
 );
