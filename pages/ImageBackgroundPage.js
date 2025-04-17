@@ -10,7 +10,7 @@ const ImageBackgroundPage = () => {
                 source={imageUrl}
             >
                 <View style={styles.bottomContainer}>
-                <Text>Welcome</Text>
+                <Text style={styles.textStyle}>Not ignorance but ignorance of ignorance is the death of knowledge</Text>
 
                 </View>
             </ImageBackground>
@@ -22,7 +22,7 @@ export default ImageBackgroundPage;
 const styles = StyleSheet.create({
 
     container: {
-        flex: 1
+        flex: 1,
     },
 
     bgImage: {
@@ -37,6 +37,14 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         opacity: .5,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingHorizontal: 20,
+    },
+
+    textStyle: {
+        fontWeight: 'bold',
+        textAlign: 'center',
+        fontSize: 24
+        
     }
 });
