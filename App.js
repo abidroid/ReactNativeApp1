@@ -17,13 +17,13 @@ export default function App() {
     >
 
       <HeaderComponent />
-      {/* <Welcome /> */}
+      <Welcome />
       {/* <FlatListComponent /> */}
       {/* <MenuItemsFlatList /> */}
       {/* <SectionListComponent /> */}
       {/* <SectionListWithComplexData /> */}
       {/* <FeedbackForm /> */}
-      <LoginPage />
+      {/* <LoginPage /> */}
       <FooterComponent />
 
 

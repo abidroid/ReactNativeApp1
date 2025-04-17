@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, TextInput } from 'react-native';
+import { View, Text, ScrollView, TextInput, Image } from 'react-native';
 import { StyleSheet } from 'react-native';
 
 function Welcome() {
@@ -15,6 +15,14 @@ function Welcome() {
                 <Text
                     style={welcomeStyles.headerText}
                 >Welcome to IntelliLogics</Text>
+
+                <Image 
+                    source={{uri: 'https://avatars.githubusercontent.com/u/17814795?v=4'}}
+                    width={200}
+                    height={200}
+                    borderRadius={10}
+                    resizeMode='contain'
+                />
                 <View style={{ height: 20 }}></View>
                 <Text
                     style={welcomeStyles.detailItemText}
@@ -24,7 +32,7 @@ function Welcome() {
                 </Text>
 
                 <TextInput
-                    keyboardType=''
+                    keyboardType='default'
                     style={welcomeStyles.input}
                     placeholder='First Name'
                     onChangeText={onChangeFirstName}
